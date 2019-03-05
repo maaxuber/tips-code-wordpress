@@ -81,7 +81,7 @@ add_action('pre_get_posts', 'hmuda_modificar_main_query');
 
 WP_Query()
 
-//Definir los par�metros de la consulta a la base de datos
+<!-- Definir los par�metros de la consulta a la base de datos -_>
 $args = array(
     'posts_per_page' => 3,
     'cat'  =>  8
@@ -96,7 +96,6 @@ $loop_a lternativo =  new WP_Query($args
     endif;
 wp_reset_postdata();
 
-//=======================================================================================================
 
 get_posts()
 //Definir los par�metros de la consulta a la base de datos
@@ -114,11 +113,8 @@ foreach($myposts as $po st )
 endforeach;
 wp_reset_postdata();
 
-
-
-//Versi�n 1:
 <!-- te entrega el nombre de la categor ia -->
-<h2><a href="<?php echo get_category_link(ej.3); ?>" title="ir a<?php the_title_attribute(); ?>">****<?php echo get_cat_name(3);?>****</a></h2>
+<h2><a href="<?php echo get_category_link(ej.3); ?>" title="ir a <?php the_title_attribute(); ?>">****<?php echo get_cat_name(3);?>****</a></h2>
 //--------------------------------------------- --------------------------------
 //Versi�n 2:
 <!-- Puede usarse tambien el siguiente -->
